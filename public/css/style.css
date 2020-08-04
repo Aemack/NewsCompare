@@ -22,21 +22,22 @@
 body{
     background: var(--clr-accent3);
 }
-
+/*
 nav ul{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-
+*/
 nav ul li{
     list-style: none;
-    display:inline;
     margin: 0 auto;
+    display: inline;
 }
 
 nav button{
     font-size: larger;
-    width:150%;
+    width:40%;
+    height: 40%;
 }
 
 nav #right{
@@ -59,6 +60,7 @@ header{
 nav{
     text-align: center;
 }
+
 
 .article{
     text-align: center;
@@ -113,6 +115,7 @@ nav{
     }
 
     .article{
+        font-size:larger ;
         width:80%;
     }
 
@@ -126,6 +129,6 @@ nav{
     }
 
     .article img{
-        width:50%;
+        width:60%;
     }
 }
