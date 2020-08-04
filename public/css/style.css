@@ -22,12 +22,12 @@
 body{
     background: var(--clr-accent3);
 }
-/*
-nav{
+
+nav ul{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-*/
+
 nav ul li{
     list-style: none;
     display:inline;
@@ -35,7 +35,8 @@ nav ul li{
 }
 
 nav button{
-    width:30%;
+    font-size: larger;
+    width:150%;
 }
 
 nav #right{
@@ -83,9 +84,6 @@ nav{
     border: 2px outset var(--clr-dark);
 }
 
-.article img{
-    right:5px;
-}
 
 #rWing h2{
     margin: 0;
@@ -102,7 +100,32 @@ nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-img{
+.article img{
     width:25%
+}
+
+@media(max-width:450px){
+
     
+    nav button{
+        font-size: larger;
+        width:100%;
+    }
+
+    .article{
+        width:80%;
+    }
+
+    .article p {
+        flex-wrap: wrap;
+    }
+
+    .article:hover{
+        transform:none;
+
+    }
+
+    .article img{
+        width:50%;
+    }
 }
