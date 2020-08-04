@@ -1,0 +1,95 @@
+/*Custom Properties*/
+:root {
+    --clr-light: #f8f8ff;
+    --clr-dark: #191308;
+    --clr-right:#A63446;
+    --clr-left: #0C6291;
+    --clr-accent3: #f2f2d0;
+    --clr-accent4: #06303b; 
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),0.25em 0.25em 0.75em rgba(0,0,0,.55);
+}
+
+
+@font-face {
+    font-family:"Chomsky";
+    src:url("./Chomsky.otf") format("otf"),
+    url("./Chomsky.woff") format("woff");
+    font-weight:normal;
+    font-style:normal;
+}
+
+body{
+    background: var(--clr-accent3);
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    list-style: none;
+    display:inline;
+    margin: 0 auto;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    text-align: center;
+    font-family: Chomsky, Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+nav{
+    text-align: center;
+}
+
+.article{
+    text-align: center;
+    width:60%;
+    margin: 10px auto;
+    background: var(--clr-light);
+    border-radius: 0 0 3em 3em;
+    box-shadow: var(--bs);
+    transition: 150ms ease-in;
+}
+
+.article:hover{
+    transform:scale(1.5)
+}
+
+.article a{
+    text-decoration: none;
+    color:black;
+}
+
+.article h2{
+    font-family: Chomsky, Arial, Helvetica, sans-serif;
+}
+
+.article img{
+    right:5px;
+}
+
+#rWing h2{
+    margin: 0;
+    padding: 10px;
+    background:var(--clr-right)
+}
+#lWing h2{
+    padding: 10px;
+    margin: 0;
+    background:var(--clr-left)
+}
+
+.article p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img{
+    width:25%
+    
+}

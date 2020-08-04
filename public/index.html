@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NewsInProgress</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>News in Progress</h1>
+
+    </header>
+    <div id="app">
+
+        <nav>
+            <ul>
+                <li><button @click="lClicked" id="left">Left Wing</button></li>
+                <li><button @click="rClicked" id="right">Right Wing</button></li>
+            </ul>
+    </nav>
+
+
+        <div id="main">
+        <div id="rWing" v-if="rwing" >
+
+            <div class="article" id="fox"><a :href="foxNewsData.url">
+                <h2>Fox News</h2>
+                
+                <h4 >{{foxNewsData.title}}</h4>
+                <p>{{foxNewsData.content}}</p>
+                <img :src="foxNewsData.urlToImage" />
+            </a></div>
+
+            <div class="article" id="breitbart"><a :href="breitbartNewsData.url">
+                <h2>Breitbart News</h2>
+                <h4>{{breitbartNewsData.title}}</h4>
+                <p>{{breitbartNewsData.content}}</p>
+                <img :src="breitbartNewsData.urlToImage" />
+            </a></div>
+
+            <div class="article" id="wallstreet"><a :href="theWallStreetJournalData.url">
+                <h2>The Wall Street Journal</h2>
+                <h4>{{theWallStreetJournalData.title}}</h4>
+                <p>{{theWallStreetJournalData.content}}</p>
+                <img :src="theWallStreetJournalData.urlToImage" />
+            </a></div>
+
+            <div class="article" id="theWashingtonPost"><a :href="theWashingtonPostData.url">
+                <h2>The Washington Post</h2>
+                <h4>{{theWashingtonPostData.title}}</h4>
+                <p>{{theWashingtonPostData.content}}</p>
+                <img :src="theWashingtonPostData.urlToImage" />
+            </a></div>
+
+        </div>
+
+        <div id="lWing" v-if="lwing" >
+
+            <div class="article" id="msnbc"><a :href="independentLink">
+                <h2>The Independent</h2>
+                <h4 >{{independentTitle}}</h4>
+                <p>{{independentDetails}}</p>
+                <img :src="independentImg" />
+            </a></div>
+        
+            <div class="article" id="cnn"><a :href="cnnLink">
+                <h2>CNN</h2>
+                <h4>{{cnnTitle}}</h4>
+                <p>{{cnnDetails}}</p>
+                <img :src="cnnImg" />
+            </a></div>
+        
+            <div class="article" id="huffington"><a :href="theHuffingtonPostLink">
+                <h2>The Huffington Post</h2>
+                <h4>{{theHuffingtonPostTitle}}</h4>
+                <p>{{theHuffingtonPostDetails}}</p>
+                <img :src="theHuffingtonPostImg" />
+            </a></div>
+        
+            <div class="article" id="viceNews"><a :href="viceNewsLink">
+                <h2>Vice News</h2>
+                <h4>{{viceNewsTitle}}</h4>
+                <p>{{viceNewsDetails}}</p>
+                <img :src="viceNewsImg" />
+            </a></div>
+        
+            
+        
+        </div>
+
+    </div>
+
+</body>
+
+</html>
