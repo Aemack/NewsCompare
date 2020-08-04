@@ -22,16 +22,28 @@
 body{
     background: var(--clr-accent3);
 }
-
+/*
 nav{
     display:flex;
     justify-content: space-around;
 }
-
+*/
 nav ul li{
     list-style: none;
     display:inline;
     margin: 0 auto;
+}
+
+nav button{
+    width:30%;
+}
+
+nav #right{
+    background: var(--clr-right);
+}
+
+nav #left{
+    background: var(--clr-left);
 }
 .app{
     display: flex;
@@ -68,6 +80,7 @@ nav{
 
 .article h2{
     font-family: Chomsky, Arial, Helvetica, sans-serif;
+    border: 2px outset var(--clr-dark);
 }
 
 .article img{
