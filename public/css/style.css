@@ -37,6 +37,7 @@ nav ul li{
 nav button{
     font-size: larger;
     width:40%;
+    color:var(--clr-light);
 }
 
 nav #right{
