@@ -61,6 +61,12 @@ nav{
     text-align: center;
 }
 
+#fadeout{
+    opacity:0
+}
+#fadein{
+    opacity:1
+}
 
 .article{
     text-align: center;

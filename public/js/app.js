@@ -2,6 +2,11 @@ var rightWing = false;
 var leftWing = false;
 var ready = false;
 
+
+
+
+
+
 model = {
     rwing:rightWing,
     lwing:leftWing,
@@ -13,11 +18,6 @@ model = {
     cnnData:{},
     theHuffingtonPostData:{},
     viceNewsData:{}
-
-
-
-
-
 }
 
 const app = new Vue({
@@ -30,8 +30,6 @@ const app = new Vue({
         ready = true;
 
 //RWING
-        //FoxNews
-        console.log(data.allData)
 
         //FoxNews
         this.foxNewsData = await data.allData.foxnews
@@ -63,13 +61,15 @@ const app = new Vue({
         rClicked: function() {
                 this.rwing=true;
                 this.lwing=false;
-                console.log('rello')
+                $("button").click(function() {
+                    x = document.getElementsByClassName("article")
+                    console.log(x)
+                })
             
         },
         lClicked: function() {
                 this.lwing=true;
                 this.rwing=false;
-                console.log('lello')
             
         }
     }

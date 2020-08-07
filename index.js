@@ -26,7 +26,6 @@ async function getData() {
             let response = await fetch(`https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=7f6a7e3fd3bb4d189f3e41bcf694f841`)
             let data = await response.json()
             source = source.split("-").join("")
-            console.log(source)
             articles[source] = await data.articles[0]
             
 
