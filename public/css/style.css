@@ -133,7 +133,8 @@ nav{
     }
 }
 .fadeout{
-    opacity:0
+    opacity:0;
+    transition: 150ms ease-in;
 }
 .fadein{
     opacity:1
