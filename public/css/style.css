@@ -132,9 +132,9 @@ nav{
         width:60%;
     }
 }
-#fadeout{
+.fadeout{
     opacity:0
 }
-#fadein{
+.fadein{
     opacity:1
 }
