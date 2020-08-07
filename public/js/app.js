@@ -35,18 +35,7 @@ const app = new Vue({
         //The Washington Post
         this.theWashingtonPostData = await data.allData.thewashingtonpost
 
-//LWING
-        //independent
-        this.independentData = await data.allData.independent
 
-        //cnn
-        this.cnnData = await data.allData.cnn
-        
-        //HuffPo
-        this.theHuffingtonPostData = await data.allData.thehuffingtonpost;
-
-        //Vice
-        this.viceNewsData = await data.allData.vicenews
     },
     methods:{
         rClicked: function() {
@@ -58,6 +47,18 @@ const app = new Vue({
         },
         lClicked: function() {
             if (ready){
+                //LWING
+        //independent
+        this.independentData = await data.allData.independent
+
+        //cnn
+        this.cnnData = await data.allData.cnn
+        
+        //HuffPo
+        this.theHuffingtonPostData = await data.allData.thehuffingtonpost;
+
+        //Vice
+        this.viceNewsData = await data.allData.vicenews
                 this.lwing=true;
                 this.rwing=false;
                 console.log('lello')
