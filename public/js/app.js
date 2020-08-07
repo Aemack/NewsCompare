@@ -61,8 +61,8 @@ const app = new Vue({
         rClicked: function() {
                 this.rwing=true;
                 this.lwing=false;
-                $('button').each(function(i, obj) {
-                    console.log(obj)
+                $('.article').each(function(i, obj) {
+                    obj.classList.add("fadeout")
                 });
             
         },
