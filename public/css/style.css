@@ -61,12 +61,7 @@ nav{
     text-align: center;
 }
 
-#fadeout{
-    opacity:0
-}
-#fadein{
-    opacity:1
-}
+
 
 .article{
     text-align: center;
@@ -136,4 +131,10 @@ nav{
     .article img{
         width:60%;
     }
+}
+#fadeout{
+    opacity:0
+}
+#fadein{
+    opacity:1
 }

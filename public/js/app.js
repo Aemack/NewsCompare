@@ -63,6 +63,7 @@ const app = new Vue({
                 this.lwing=false;
                 $('.article').each(function(i, obj) {
                     obj.classList.add("fadeout")
+                    obj.classList.remove("fadeout")
                 });
             
         },
