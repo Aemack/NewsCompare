@@ -61,8 +61,8 @@ const app = new Vue({
         rClicked: function() {
                 this.rwing=true;
                 this.lwing=false;
-                $('#main').classList.add("fadeout")
-                $('#main').classList.remove("fadeout")
+                document.getElementById("main").classList.add("fadeout")
+                document.getElementById("main").classList.remove("fadeout")
                 
             
         },
