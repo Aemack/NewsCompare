@@ -34,7 +34,7 @@ const app = new Vue({
         
         //The Washington Post
         this.theWashingtonPostData = await data.allData.thewashingtonpost
-*/
+
 //LWING
         //independent
         this.independentData = await data.allData.independent
