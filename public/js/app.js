@@ -8,7 +8,12 @@ model = {
     foxNewsData:{},
     theWallStreetJournalData:{},
     breitbartNewsData:{},
-    theWashingtonPostData:{}
+    theWashingtonPostData:{},
+    independentData:{},
+    cnnData:{},
+    theHuffingtonPostData:{},
+    viceNewsData:{}
+
 
 
 
@@ -62,11 +67,10 @@ const app = new Vue({
             
         },
         lClicked: function() {
-            if (ready){
                 this.lwing=true;
                 this.rwing=false;
                 console.log('lello')
-            }
+            
         }
     }
 })
