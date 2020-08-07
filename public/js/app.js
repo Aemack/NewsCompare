@@ -59,16 +59,19 @@ const app = new Vue({
     },
     methods:{
         rClicked: function() {
+                document.getElementById("main").classList.remove("fadein")
                 this.rwing=true;
                 this.lwing=false;
-                document.getElementById("main").classList.add("fadeout")
-                document.getElementById("main").classList.remove("fadeout")
+                document.getElementById("main").classList.add("fadein")
                 
             
         },
         lClicked: function() {
+            
+                document.getElementById("main").classList.remove("fadein")
                 this.lwing=true;
                 this.rwing=false;
+                document.getElementById("main").classList.add("fadein")
             
         }
     }
