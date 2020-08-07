@@ -58,32 +58,32 @@
 
         <div id="lWing" v-if="lwing" >
 
-            <div class="article" id="msnbc"><a :href="independentLink">
+            <div class="article" id="msnbc"><a :href="independent.url">
                 <h2>The Independent</h2>
-                <h4 >{{independentTitle}}</h4>
-                <p>{{independentDetails}}</p>
-                <img :src="independentImg" />
+                <h4 >{{independent.title}}</h4>
+                <p>{{independent.content}}</p>
+                <img :src="independent.urlToImage" />
             </a></div>
         
-            <div class="article" id="cnn"><a :href="cnnLink">
+            <div class="article" id="cnn"><a :href="cnn.url">
                 <h2>CNN</h2>
-                <h4>{{cnnTitle}}</h4>
-                <p>{{cnnDetails}}</p>
-                <img :src="cnnImg" />
+                <h4>{{cnn.title}}</h4>
+                <p>{{cnn.content}}</p>
+                <img :src="cnn.urlToImage" />
             </a></div>
         
-            <div class="article" id="huffington"><a :href="theHuffingtonPostLink">
+            <div class="article" id="huffington"><a :href="theHuffingtonPost.url">
                 <h2>The Huffington Post</h2>
-                <h4>{{theHuffingtonPostTitle}}</h4>
-                <p>{{theHuffingtonPostDetails}}</p>
-                <img :src="theHuffingtonPostImg" />
+                <h4>{{theHuffingtonPost.title}}</h4>
+                <p>{{theHuffingtonPost.content}}</p>
+                <img :src="theHuffingtonPost.urlToImage" />
             </a></div>
         
-            <div class="article" id="viceNews"><a :href="viceNewsLink">
+            <div class="article" id="viceNews"><a :href="viceNews.url">
                 <h2>Vice News</h2>
-                <h4>{{viceNewsTitle}}</h4>
-                <p>{{viceNewsDetails}}</p>
-                <img :src="viceNewsImg" />
+                <h4>{{viceNews.title}}</h4>
+                <p>{{viceNews.content}}</p>
+                <img :src="viceNews.urlToImage" />
             </a></div>
         
             
