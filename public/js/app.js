@@ -18,8 +18,6 @@ const app = new Vue({
         ready = true;
 
 //RWING
-        //FoxNews
-        data.allData.foxnews["view"]="right"
         console.log(data.allData)
 
         //FoxNews
@@ -45,20 +43,20 @@ const app = new Vue({
                 console.log('rello')
             }
         },
-        lClicked: function() {
+        lClicked: async function() {
             if (ready){
                 //LWING
-        //independent
-        this.independentData = await data.allData.independent
+                //independent
+                this.independentData = await data.allData.independent
 
-        //cnn
-        this.cnnData = await data.allData.cnn
-        
-        //HuffPo
-        this.theHuffingtonPostData = await data.allData.thehuffingtonpost;
+                //cnn
+                this.cnnData = await data.allData.cnn
+                
+                //HuffPo
+                this.theHuffingtonPostData = await data.allData.thehuffingtonpost;
 
-        //Vice
-        this.viceNewsData = await data.allData.vicenews
+                //Vice
+                this.viceNewsData = await data.allData.vicenews
                 this.lwing=true;
                 this.rwing=false;
                 console.log('lello')
