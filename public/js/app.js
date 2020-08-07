@@ -56,11 +56,10 @@ const app = new Vue({
     },
     methods:{
         rClicked: function() {
-            if (ready){
                 this.rwing=true;
                 this.lwing=false;
                 console.log('rello')
-            }
+            
         },
         lClicked: function() {
             if (ready){
