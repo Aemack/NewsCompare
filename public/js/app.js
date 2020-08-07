@@ -62,8 +62,7 @@ const app = new Vue({
                 this.rwing=true;
                 this.lwing=false;
                 $('.article').each(function(i, obj) {
-                    obj.css("opacity","0")
-                    obj.css("opacity","1")
+                    obj.classList.add("fadeout")
                 });
             
         },
