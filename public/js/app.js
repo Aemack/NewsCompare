@@ -61,10 +61,9 @@ const app = new Vue({
         rClicked: function() {
                 this.rwing=true;
                 this.lwing=false;
-                $("button").click(function() {
-                    x = document.getElementsByClassName("article")
-                    console.log(x)
-                })
+                $('button').each(function(i, obj) {
+                    console.log(obj)
+                });
             
         },
         lClicked: function() {
